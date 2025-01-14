@@ -1,0 +1,19 @@
+Package: MSSBPredictivemodel
+Title: Predictive Model for Colorectal Cancer and Precancerous Lesions Based on Gene SSB.
+Version: 1.0.1
+Authors@R: 
+    person("Jiabian&Xia", "Lian&Lu", email = "faster_lian@xmu.edu.cn", role = c("aut", "cre"))
+Description: This R package provides a predictive model based on a k-Nearest Neighbors (kNN) algorithm to assess the likelihood and probability of colorectal cancer or precancerous lesions in patients. Users can input the LPKM-SSB values of eight specific genes (ABCB5, AC093642.5, AF146191.4, ANO3, CTD.2231H16.1, PRKG1, RASA3, and VIPR2) to generate predictions. The input data is automatically standardized, and the prediction model calculates the probabilities based on the provided test sample.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Imports:
+    kknn,
+    pROC,
+    iml,
+    shapviz,
+    dplyr
+Depends: 
+    R (>= 3.5)
+LazyData: true
